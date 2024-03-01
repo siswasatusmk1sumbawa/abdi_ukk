@@ -91,7 +91,7 @@ include "layout/header_admin.html";
 <!-- Begin page content -->
 <main class="flex-shrink-0">
   <div class="container">
-    <h1 class="mt-2" style="color:white;">Selamat datang <?= $_SESSION['namalengkap'] ?> </h1>
+    <h1 class="mt-2" style="color:white;">Welcome <?= $_SESSION['namalengkap'] ?> </h1>
     <hr>
 
     <div class="row">

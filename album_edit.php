@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Album</title>
+    <title>Ciki master</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
@@ -39,24 +39,24 @@ include "layout/header_admin.html";
 <!-- Begin page content -->
 <main class="flex-shrink-0">
   <div class="container">
-    <h1 class="mt-3">Selamat datang <?= $_SESSION['namalengkap'] ?> </h1>
+    <h1 class="mt-3" style="color:white;"> Welcome <?= $_SESSION['namalengkap'] ?> </h1>
     <hr>
     <div class="container">
 
       <div class="container mt-1 row justify-content-center">
         <div class="col-sm-3">
-          <h1 class="mt-2">Album</h1>
+          <h1 class="mt-2" style="color:white;">Album</h1>
           <form action="album_edit.php" method="POST">
             <?php
             while ($data = mysqli_fetch_array($sql)) {
             ?>
               <input type="text" name="albumid" value="<?= $data['albumid'] ?>" hidden>
-              <div class="mb-3 mt-3">
-                <label for="namaalbum">Nama Album</label>
+              <div class="mb-3 mt-3" style="color:white;">
+                <label for="namaalbum"></label>
                 <input type="text" class="form-control" id="namaalbum" name="namaalbum" value="<?= $data['namaalbum'] ?>">
               </div>
-              <div class="mb-3">
-                <label for="deskripsi">Deskripsi</label>
+              <div class="mb-3" style="color:white;">
+                <label for="deskripsi"></label>
                 <textarea name="deskripsi" id="deskripsi" class="form-control" rows="10"> <?= $data['deskripsi'] ?> </textarea>
               </div>
             <?php } ?>

@@ -80,23 +80,23 @@ include "layout/header_admin.html";
 <!-- Begin page content -->
 <main class="flex-shrink-0">
   <div class="container">
-    <h1 class="mt-2">Selamat datang <?= $_SESSION['namalengkap'] ?> </h1>
+    <h1 class="mt-2" style="color:white;"> Welcome <?= $_SESSION['namalengkap'] ?> </h1>
     <hr>
 
     <div class="row">
-      <div class="col-sm-3 bg-body-tertiary">
+      <div class="col-sm-3" style="color:white;">
         <h3>Foto</h3>
         <form action="foto_edit.php" method="POST" enctype="multipart/form-data">
-          <div class="mb-3 mt-3">
+          <div class="mb-3 mt-3" style="color:white;">
             <label for="judulfoto">Judul Foto</label>
             <input type="text" name="fotoid" value="<?= $fotoid2 ?>" hidden>
             <input type="text" class="form-control" id="judulfoto" placeholder="Enter Judul Foto" name="judulfoto" value="<?= $judulfoto2 ?>">
           </div>
-          <div class="mb-3">
+          <div class="mb-3" style="color:white;">
             <label for="deskripsifoto">Deskripsi Foto</label>
             <textarea name="deskripsifoto" id="deskripsifoto" class="form-control" rows="5" placeholder="enter deskripsi foto"><?= $deskripsi2 ?></textarea>
           </div>
-          <div class="mb-3">
+          <div class="mb-3" style="color:white;">
             <label for="lokasifile">Upload Foto</label>
             <input type="file" name="lokasifile" id="lokasifile" class="form-control">
           </div>

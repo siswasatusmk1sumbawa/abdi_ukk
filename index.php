@@ -17,7 +17,9 @@ include "layout/header.html";
 ?>
 
    <main>
-    <h1 class="text-center" style="color:white;">Welcome To Website Ciki Master xixixi</h1>
+    <h1 class="text-center" style="color:white;">Welcome To Website Ciki Master</h1>
+    <p class="text-center" style="color:white;">Silahkan <a href="login.php">LOGIN</a> >jika sudah terdaftar. 
+    Jika belum silahkan <a href="register.php">REGISTER</a></p>
    </main>
 
    <?php 

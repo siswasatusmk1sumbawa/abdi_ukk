@@ -60,17 +60,17 @@ include "layout/header_admin.html";
       while ($data = mysqli_fetch_array($sql)) {
       ?>
         <div class="col-sm-3 my-1">
-          <div class="card">
-            <div class="card-header">
+          <div class="text-center">
+            <div class="text-center" style="color:white;">
               <h3><?= $data['judulfoto'] ?></h3>
             </div>
-            <div class="card-body text-center">
-              <img src="gambar/<?= $data['lokasifile'] ?>" alt="foto" width="150px">
+            <div class="text-center" style="color:white;">
+              <img src="gambar/<?= $data['lokasifile'] ?>" alt="foto" width="250px">
               <hr>
               <i><?= $data['deskripsifoto'] ?></i>
               <h5>upload by <?= $data['namalengkap'] ?></h5>
             </div>
-            <div class="card-footer">
+            <div class="text-center">
               <?php
               $fotoid = $data['fotoid'];
               $sql2 = mysqli_query($conn, "select * from likefoto where fotoid='$fotoid'");
